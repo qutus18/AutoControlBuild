@@ -28,121 +28,222 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            this.pnlItem = new System.Windows.Forms.Panel();
-            this.pnlBuildControl = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnAddItem = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.pnlItem.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // pnlItem
-            // 
-            this.pnlItem.Controls.Add(this.listView1);
-            this.pnlItem.Controls.Add(this.btnUpdate);
-            this.pnlItem.Controls.Add(this.btnAddItem);
-            this.pnlItem.Controls.Add(this.comboBox1);
-            this.pnlItem.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlItem.Location = new System.Drawing.Point(0, 0);
-            this.pnlItem.Name = "pnlItem";
-            this.pnlItem.Size = new System.Drawing.Size(415, 600);
-            this.pnlItem.TabIndex = 0;
-            // 
-            // pnlBuildControl
-            // 
-            this.pnlBuildControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBuildControl.Location = new System.Drawing.Point(415, 0);
-            this.pnlBuildControl.Name = "pnlBuildControl";
-            this.pnlBuildControl.Size = new System.Drawing.Size(585, 600);
-            this.pnlBuildControl.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+			this.pnlItem = new System.Windows.Forms.Panel();
+			this.dgvControlItems1 = new System.Windows.Forms.DataGridView();
+			this.btnUpdate = new System.Windows.Forms.Button();
+			this.btnAddItem1 = new System.Windows.Forms.Button();
+			this.cbItemType = new System.Windows.Forms.ComboBox();
+			this.pnlTool = new System.Windows.Forms.Panel();
+			this.ucParamsSetting = new AutoControlBuild.ControlDisplay.AutoAddItemsSetting();
+			this.btnAddItem2 = new System.Windows.Forms.Button();
+			this.btnAddItem3 = new System.Windows.Forms.Button();
+			this.btnAddItem4 = new System.Windows.Forms.Button();
+			this.dgvControlItems2 = new System.Windows.Forms.DataGridView();
+			this.dgvControlItems3 = new System.Windows.Forms.DataGridView();
+			this.dgvControlItems4 = new System.Windows.Forms.DataGridView();
+			this.pnlItem.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvControlItems1)).BeginInit();
+			this.pnlTool.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvControlItems2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvControlItems3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvControlItems4)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// pnlItem
+			// 
+			this.pnlItem.AutoSize = true;
+			this.pnlItem.Controls.Add(this.dgvControlItems4);
+			this.pnlItem.Controls.Add(this.dgvControlItems3);
+			this.pnlItem.Controls.Add(this.dgvControlItems2);
+			this.pnlItem.Controls.Add(this.btnAddItem4);
+			this.pnlItem.Controls.Add(this.btnAddItem2);
+			this.pnlItem.Controls.Add(this.dgvControlItems1);
+			this.pnlItem.Controls.Add(this.btnUpdate);
+			this.pnlItem.Controls.Add(this.btnAddItem3);
+			this.pnlItem.Controls.Add(this.btnAddItem1);
+			this.pnlItem.Controls.Add(this.cbItemType);
+			this.pnlItem.Dock = System.Windows.Forms.DockStyle.Left;
+			this.pnlItem.Location = new System.Drawing.Point(0, 0);
+			this.pnlItem.Name = "pnlItem";
+			this.pnlItem.Size = new System.Drawing.Size(378, 793);
+			this.pnlItem.TabIndex = 0;
+			// 
+			// dgvControlItems1
+			// 
+			this.dgvControlItems1.BackgroundColor = System.Drawing.Color.White;
+			this.dgvControlItems1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvControlItems1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvControlItems1.Location = new System.Drawing.Point(12, 39);
+			this.dgvControlItems1.Name = "dgvControlItems1";
+			this.dgvControlItems1.Size = new System.Drawing.Size(363, 178);
+			this.dgvControlItems1.TabIndex = 2;
+			// 
+			// btnUpdate
+			// 
+			this.btnUpdate.BackColor = System.Drawing.Color.SkyBlue;
+			this.btnUpdate.FlatAppearance.BorderSize = 0;
+			this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnUpdate.Location = new System.Drawing.Point(109, 507);
+			this.btnUpdate.Name = "btnUpdate";
+			this.btnUpdate.Size = new System.Drawing.Size(88, 21);
+			this.btnUpdate.TabIndex = 1;
+			this.btnUpdate.Text = "Update";
+			this.btnUpdate.UseVisualStyleBackColor = false;
+			this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+			// 
+			// btnAddItem1
+			// 
+			this.btnAddItem1.BackColor = System.Drawing.Color.Silver;
+			this.btnAddItem1.FlatAppearance.BorderSize = 0;
+			this.btnAddItem1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddItem1.Location = new System.Drawing.Point(93, 12);
+			this.btnAddItem1.Name = "btnAddItem1";
+			this.btnAddItem1.Size = new System.Drawing.Size(66, 21);
+			this.btnAddItem1.TabIndex = 1;
+			this.btnAddItem1.Text = "Add Item";
+			this.btnAddItem1.UseVisualStyleBackColor = false;
+			this.btnAddItem1.Click += new System.EventHandler(this.btnAddItem_Click);
+			// 
+			// cbItemType
+			// 
+			this.cbItemType.FormattingEnabled = true;
+			this.cbItemType.Items.AddRange(new object[] {
             "Int",
             "Bool",
             "Float",
             "String"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(209, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.BackColor = System.Drawing.Color.Silver;
-            this.btnAddItem.FlatAppearance.BorderSize = 0;
-            this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddItem.Location = new System.Drawing.Point(227, 12);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(88, 21);
-            this.btnAddItem.TabIndex = 1;
-            this.btnAddItem.Text = "Add Item";
-            this.btnAddItem.UseVisualStyleBackColor = false;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            this.listView1.HideSelection = false;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listView1.Location = new System.Drawing.Point(12, 39);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(303, 549);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Name";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Type";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(321, 287);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(88, 21);
-            this.btnUpdate.TabIndex = 1;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // Main
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.pnlBuildControl);
-            this.Controls.Add(this.pnlItem);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Main";
-            this.Text = "Form1";
-            this.pnlItem.ResumeLayout(false);
-            this.ResumeLayout(false);
+			this.cbItemType.Location = new System.Drawing.Point(12, 12);
+			this.cbItemType.Name = "cbItemType";
+			this.cbItemType.Size = new System.Drawing.Size(75, 21);
+			this.cbItemType.TabIndex = 0;
+			// 
+			// pnlTool
+			// 
+			this.pnlTool.BackColor = System.Drawing.Color.White;
+			this.pnlTool.Controls.Add(this.ucParamsSetting);
+			this.pnlTool.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pnlTool.Location = new System.Drawing.Point(378, 0);
+			this.pnlTool.Name = "pnlTool";
+			this.pnlTool.Size = new System.Drawing.Size(622, 793);
+			this.pnlTool.TabIndex = 0;
+			// 
+			// ucParamsSetting
+			// 
+			this.ucParamsSetting.AutoSize = true;
+			this.ucParamsSetting.BackColor = System.Drawing.Color.White;
+			this.ucParamsSetting.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.ucParamsSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ucParamsSetting.Location = new System.Drawing.Point(0, 0);
+			this.ucParamsSetting.Name = "ucParamsSetting";
+			this.ucParamsSetting.Size = new System.Drawing.Size(622, 793);
+			this.ucParamsSetting.TabIndex = 0;
+			// 
+			// btnAddItem2
+			// 
+			this.btnAddItem2.BackColor = System.Drawing.Color.Silver;
+			this.btnAddItem2.FlatAppearance.BorderSize = 0;
+			this.btnAddItem2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddItem2.Location = new System.Drawing.Point(165, 12);
+			this.btnAddItem2.Name = "btnAddItem2";
+			this.btnAddItem2.Size = new System.Drawing.Size(66, 21);
+			this.btnAddItem2.TabIndex = 3;
+			this.btnAddItem2.Text = "Add Item";
+			this.btnAddItem2.UseVisualStyleBackColor = false;
+			this.btnAddItem2.Click += new System.EventHandler(this.btnAddItem2_Click);
+			// 
+			// btnAddItem3
+			// 
+			this.btnAddItem3.BackColor = System.Drawing.Color.Silver;
+			this.btnAddItem3.FlatAppearance.BorderSize = 0;
+			this.btnAddItem3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddItem3.Location = new System.Drawing.Point(237, 12);
+			this.btnAddItem3.Name = "btnAddItem3";
+			this.btnAddItem3.Size = new System.Drawing.Size(66, 21);
+			this.btnAddItem3.TabIndex = 1;
+			this.btnAddItem3.Text = "Add Item";
+			this.btnAddItem3.UseVisualStyleBackColor = false;
+			this.btnAddItem3.Click += new System.EventHandler(this.btnAddItem3_Click);
+			// 
+			// btnAddItem4
+			// 
+			this.btnAddItem4.BackColor = System.Drawing.Color.Silver;
+			this.btnAddItem4.FlatAppearance.BorderSize = 0;
+			this.btnAddItem4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddItem4.Location = new System.Drawing.Point(309, 12);
+			this.btnAddItem4.Name = "btnAddItem4";
+			this.btnAddItem4.Size = new System.Drawing.Size(66, 21);
+			this.btnAddItem4.TabIndex = 3;
+			this.btnAddItem4.Text = "Add Item";
+			this.btnAddItem4.UseVisualStyleBackColor = false;
+			this.btnAddItem4.Click += new System.EventHandler(this.btnAddItem4_Click);
+			// 
+			// dgvControlItems2
+			// 
+			this.dgvControlItems2.BackgroundColor = System.Drawing.Color.White;
+			this.dgvControlItems2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvControlItems2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvControlItems2.Location = new System.Drawing.Point(12, 223);
+			this.dgvControlItems2.Name = "dgvControlItems2";
+			this.dgvControlItems2.Size = new System.Drawing.Size(363, 178);
+			this.dgvControlItems2.TabIndex = 4;
+			// 
+			// dgvControlItems3
+			// 
+			this.dgvControlItems3.BackgroundColor = System.Drawing.Color.White;
+			this.dgvControlItems3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvControlItems3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvControlItems3.Location = new System.Drawing.Point(12, 407);
+			this.dgvControlItems3.Name = "dgvControlItems3";
+			this.dgvControlItems3.Size = new System.Drawing.Size(363, 178);
+			this.dgvControlItems3.TabIndex = 4;
+			// 
+			// dgvControlItems4
+			// 
+			this.dgvControlItems4.BackgroundColor = System.Drawing.Color.White;
+			this.dgvControlItems4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvControlItems4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvControlItems4.Location = new System.Drawing.Point(12, 591);
+			this.dgvControlItems4.Name = "dgvControlItems4";
+			this.dgvControlItems4.Size = new System.Drawing.Size(363, 178);
+			this.dgvControlItems4.TabIndex = 4;
+			// 
+			// Main
+			// 
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+			this.AutoSize = true;
+			this.ClientSize = new System.Drawing.Size(1000, 793);
+			this.Controls.Add(this.pnlTool);
+			this.Controls.Add(this.pnlItem);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+			this.Name = "Main";
+			this.Text = "Form1";
+			this.pnlItem.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dgvControlItems1)).EndInit();
+			this.pnlTool.ResumeLayout(false);
+			this.pnlTool.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvControlItems2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvControlItems3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvControlItems4)).EndInit();
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel pnlItem;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnAddItem;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel pnlBuildControl;
-    }
+        private System.Windows.Forms.Button btnAddItem1;
+        private System.Windows.Forms.ComboBox cbItemType;
+		private System.Windows.Forms.DataGridView dgvControlItems1;
+		private System.Windows.Forms.Panel pnlTool;
+		private ControlDisplay.AutoAddItemsSetting ucParamsSetting;
+		private System.Windows.Forms.DataGridView dgvControlItems4;
+		private System.Windows.Forms.DataGridView dgvControlItems3;
+		private System.Windows.Forms.DataGridView dgvControlItems2;
+		private System.Windows.Forms.Button btnAddItem4;
+		private System.Windows.Forms.Button btnAddItem2;
+		private System.Windows.Forms.Button btnAddItem3;
+	}
 }
 

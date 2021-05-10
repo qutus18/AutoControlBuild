@@ -66,6 +66,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlDisplay\AutoAddItemsSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlDisplay\AutoAddItemsSetting.Designer.cs">
+      <DependentUpon>AutoAddItemsSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlItem.cs" />
+    <Compile Include="ControlDisplay\ItemSub.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlDisplay\ItemSub.Designer.cs">
+      <DependentUpon>ItemSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HProcedureItem.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +88,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlDisplay\AutoAddItemsSetting.resx">
+      <DependentUpon>AutoAddItemsSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDisplay\ItemSub.resx">
+      <DependentUpon>ItemSub.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
