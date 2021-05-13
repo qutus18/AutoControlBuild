@@ -12,20 +12,20 @@ namespace AutoControlBuild
 {
 	public partial class Main : Form
 	{
-		public List<ControlItem> ControlItemsGlobal;
+		public List<ParamItem> ControlItemsGlobal;
 		public int IDGenerateCurrentNumber;
 		public Main()
 		{
 			InitializeComponent();
-			ControlItemsGlobal = new List<ControlItem>();
+			ControlItemsGlobal = new List<ParamItem>();
 			ucParamsSetting.LinkParams(ControlItemsGlobal);
 			IDGenerateCurrentNumber = 0;
 		}
 
 
-		private void AddControlItemToGlobalList(string controlType)
+		private void AddControlItemToGlobalList(string dataType, string paramType)
 		{
-			ControlItem tempControlItem = new ControlItem(IDGenerateCurrentNumber, controlType);
+			ParamItem tempControlItem = new ParamItem(IDGenerateCurrentNumber.ToString(), dataType, paramType);
 			IDGenerateCurrentNumber++;
 			ControlItemsGlobal.Add(tempControlItem);
 			UpdateListViewControlItem();
@@ -47,26 +47,31 @@ namespace AutoControlBuild
 		{
 			if (cbItemType.SelectedIndex < 0) return;
 			//
-			AddControlItemToGlobalList(cbItemType.SelectedItem.ToString());
+			AddControlItemToGlobalList(cbItemType.SelectedItem.ToString(), "CtrlIn");
 
 		}
 		private void btnAddItem2_Click(object sender, EventArgs e)
 		{
 			if (cbItemType.SelectedIndex < 0) return;
 			//
-			AddControlItemToGlobalList(cbItemType.SelectedItem.ToString());
+			AddControlItemToGlobalList(cbItemType.SelectedItem.ToString(), "CtrlOut");
 		}
 		private void btnAddItem3_Click(object sender, EventArgs e)
 		{
 			if (cbItemType.SelectedIndex < 0) return;
 			//
-			AddControlItemToGlobalList(cbItemType.SelectedItem.ToString());
+			AddControlItemToGlobalList(cbItemType.SelectedItem.ToString(), "IconicIn");
 		}
 		private void btnAddItem4_Click(object sender, EventArgs e)
 		{
+			if (GlobalVars.HdevHelp == null) GlobalVars.HdevHelp = new HDevHelper();
+			ControlItemsGlobal.Clear();
+			ControlItemsGlobal.AddRange(GlobalVars.HdevHelp.LoadParamsFromHdevFile(""));
+			UpdateListViewControlItem();
+
 			if (cbItemType.SelectedIndex < 0) return;
 			//
-			AddControlItemToGlobalList(cbItemType.SelectedItem.ToString());
+			AddControlItemToGlobalList(cbItemType.SelectedItem.ToString(), "IconicOut");
 
 		}
 

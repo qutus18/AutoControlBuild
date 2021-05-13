@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace AutoControlBuild
 {
-	public class HProcedureItem
+	public static class GlobalVars
 	{
-		public List<ControlItem> Params { get; set; }
-		public HProcedureItem()
-		{
-
-		}
+		public static HDevHelper HdevHelp = null;
 	}
 }

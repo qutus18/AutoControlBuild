@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace AutoControlBuild
 {
-	public class ControlItem
+	public class HProcedureItem
 	{
-		public int ID { get; set; }
-		public string Type { get; set; }
-
-		public ControlItem(int id, string type)
+		public List<ParamItem> Params { get; set; }
+		public HProcedureItem()
 		{
-			ID = id;
-			Type = type;
+
 		}
 	}
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace AutoControlBuild
 {
-	partial class ItemSub
+	partial class ucParamItem
 	{
 		/// <summary> 
 		/// Required designer variable.
@@ -29,7 +29,7 @@ namespace AutoControlBuild
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemSub));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucParamItem));
 			this.lblItemTitle = new System.Windows.Forms.Label();
 			this.txtItemValue = new System.Windows.Forms.TextBox();
 			this.lblItemType = new System.Windows.Forms.Label();

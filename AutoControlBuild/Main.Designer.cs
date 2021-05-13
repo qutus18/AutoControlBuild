@@ -34,7 +34,7 @@
 			this.btnAddItem1 = new System.Windows.Forms.Button();
 			this.cbItemType = new System.Windows.Forms.ComboBox();
 			this.pnlTool = new System.Windows.Forms.Panel();
-			this.ucParamsSetting = new AutoControlBuild.ControlDisplay.AutoAddItemsSetting();
+			this.ucParamsSetting = new AutoControlBuild.ucParamsAutoGen();
 			this.btnAddItem2 = new System.Windows.Forms.Button();
 			this.btnAddItem3 = new System.Windows.Forms.Button();
 			this.btnAddItem4 = new System.Windows.Forms.Button();
@@ -237,7 +237,7 @@
         private System.Windows.Forms.ComboBox cbItemType;
 		private System.Windows.Forms.DataGridView dgvControlItems1;
 		private System.Windows.Forms.Panel pnlTool;
-		private ControlDisplay.AutoAddItemsSetting ucParamsSetting;
+		private ucParamsAutoGen ucParamsSetting;
 		private System.Windows.Forms.DataGridView dgvControlItems4;
 		private System.Windows.Forms.DataGridView dgvControlItems3;
 		private System.Windows.Forms.DataGridView dgvControlItems2;

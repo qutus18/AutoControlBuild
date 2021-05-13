@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace AutoControlBuild
 {
-	public partial class ItemSub : UserControl
+	public partial class ucParamItem : UserControl
 	{
-		private ControlItem item;
+		private ParamItem item;
 
-		public ControlItem Item
+		public ParamItem Item
 		{
 			get { return item; }
 			set { item = value; UpdateItemSubView(); }
@@ -22,11 +22,11 @@ namespace AutoControlBuild
 
 		private void UpdateItemSubView()
 		{
-			lblItemTitle.Text = item.ID.ToString();
-			lblItemType.Text = $"({item.Type})";
+			lblItemTitle.Text = item.Name.ToString();
+			lblItemType.Text = $"({item.DataType})";
 		}
 
-		public ItemSub()
+		public ucParamItem()
 		{
 			InitializeComponent();
 		}

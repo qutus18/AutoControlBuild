@@ -66,20 +66,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlDisplay\AutoAddItemsSetting.cs">
+    <Compile Include="ControlDisplay\ucParamsAutoGen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ControlDisplay\AutoAddItemsSetting.Designer.cs">
-      <DependentUpon>AutoAddItemsSetting.cs</DependentUpon>
+    <Compile Include="ControlDisplay\ucParamsAutoGen.Designer.cs">
+      <DependentUpon>ucParamsAutoGen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControlItem.cs" />
-    <Compile Include="ControlDisplay\ItemSub.cs">
+    <Compile Include="GlobalVars.cs" />
+    <Compile Include="HalconProcedure\HDevHelper.cs" />
+    <Compile Include="HalconProcedure\ParamItem.cs" />
+    <Compile Include="ControlDisplay\ucParamItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ControlDisplay\ItemSub.Designer.cs">
-      <DependentUpon>ItemSub.cs</DependentUpon>
+    <Compile Include="ControlDisplay\ucParamItem.Designer.cs">
+      <DependentUpon>ucParamItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="HProcedureItem.cs" />
+    <Compile Include="HalconProcedure\HalconProcedure.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +90,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ControlDisplay\AutoAddItemsSetting.resx">
-      <DependentUpon>AutoAddItemsSetting.cs</DependentUpon>
+    <EmbeddedResource Include="ControlDisplay\ucParamsAutoGen.resx">
+      <DependentUpon>ucParamsAutoGen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ControlDisplay\ItemSub.resx">
-      <DependentUpon>ItemSub.cs</DependentUpon>
+    <EmbeddedResource Include="ControlDisplay\ucParamItem.resx">
+      <DependentUpon>ucParamItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
