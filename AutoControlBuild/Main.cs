@@ -18,7 +18,7 @@ namespace AutoControlBuild
 		{
 			InitializeComponent();
 			ControlItemsGlobal = new List<ParamItem>();
-			ucParamsSetting.LinkParams(ControlItemsGlobal);
+			//ucParamsSetting.LinkParams(ControlItemsGlobal);
 			IDGenerateCurrentNumber = 0;
 		}
 
@@ -37,7 +37,7 @@ namespace AutoControlBuild
 			//var dataSource = new BindingSource(ControlItemsGlobal, null);
 			dgvControlItems1.DataSource = null;
 			dgvControlItems1.DataSource = ControlItemsGlobal;
-			ucParamsSetting.UpdateParamsSettingDisplay();
+			//ucParamsSetting.UpdateParamsSettingDisplay();
 		}
 
 		private void btnUpdate_Click(object sender, EventArgs e)

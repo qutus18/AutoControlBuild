@@ -53,6 +53,12 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="halcondotnet">
+      <HintPath>..\..\..\..\..\..\Program Files\MVTec\HALCON-20.11-Steady\bin\dotnet35\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="hdevenginedotnet">
+      <HintPath>..\..\..\..\..\..\Program Files\MVTec\HALCON-20.11-Steady\bin\dotnet35\hdevenginedotnet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +72,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlDisplay\ucHalconSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlDisplay\ucHalconSettings.Designer.cs">
+      <DependentUpon>ucHalconSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlDisplay\ucParamsAutoGen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,6 +94,9 @@
       <DependentUpon>ucParamItem.cs</DependentUpon>
     </Compile>
     <Compile Include="HalconProcedure\HalconProcedure.cs" />
+    <Compile Include="HalconToolDotnet\DataCodeReaderV1.cs" />
+    <Compile Include="HalconToolDotnet\LinkableTool.cs" />
+    <Compile Include="HalconToolDotnet\RegionRect2.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +105,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlDisplay\ucHalconSettings.resx">
+      <DependentUpon>ucHalconSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlDisplay\ucParamsAutoGen.resx">
       <DependentUpon>ucParamsAutoGen.cs</DependentUpon>
     </EmbeddedResource>
